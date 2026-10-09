@@ -16,16 +16,28 @@
 <body>
 <main>
 <h1>Política de privacidad de Guardian by Shinra</h1>
-<p class="muted">Última actualización: 9 de octubre de 2026 (ubicación) · ShinraCode</p>
+<p class="muted">Última actualización: 9 de octubre de 2026 (familia conectada) · ShinraCode</p>
 
 <p>Guardian by Shinra es una app de acompañamiento para personas con deterioro cognitivo o demencia y sus familias. Esta política explica qué datos usa la app y qué pasa con ellos.</p>
 
 <h2>Resumen</h2>
 <ul>
-  <li>Todo lo que se carga en la app se guarda <strong>solo en el teléfono</strong>. No tenemos servidores que reciban esos datos.</li>
-  <li>No pedimos crear una cuenta, no mostramos publicidad y no vendemos ni compartimos datos.</li>
+  <li>Lo que se carga en la app se guarda <strong>en el teléfono</strong>. Solo si la familia activa "Familia conectada", una parte se comparte con los celulares vinculados (ver abajo).</li>
+  <li>No pedimos mail ni contraseña, no mostramos publicidad y no vendemos datos.</li>
   <li>No usamos herramientas de análisis ni de seguimiento.</li>
 </ul>
+
+<h2>Familia conectada (opcional)</h2>
+<p>Si en el celular de la persona se vincula el celular de un familiar con un código de 6 números, estos datos pasan por Google Firebase (Cloud Firestore, servidores en São Paulo, Brasil) para que solo esos celulares vinculados los vean:</p>
+<ul>
+  <li>Nombre de la persona, nombres y parentesco de sus familiares, y sus rutinas.</li>
+  <li>Cuándo usó la app por última vez.</li>
+  <li>Avisos: si dijo que está perdido o si no confirmó una rutina.</li>
+  <li>Su ubicación, solo cuando dice que está perdido o cuando un familiar vinculado la pide, y solo si "Compartir ubicación con la familia" está activado.</li>
+  <li>Fotos que un familiar manda para Recuerdos (se borran del servidor apenas llegan al celular de la persona).</li>
+</ul>
+<p>Cada celular entra con un usuario anónimo de Firebase Authentication. Las reglas de seguridad impiden que alguien fuera del grupo vinculado lea estos datos. Las conversaciones con el asistente nunca se comparten. Para dejar de compartir: en el celular de la persona, Familia → Familia conectada → "Dejar de compartir con la familia". Para pedir que se borren los datos del servidor, escribinos al contacto de abajo.</p>
+<p>Los avisos al celular del familiar pueden enviarse con el servicio de notificaciones de Expo, que solo recibe el texto del aviso.</p>
 
 <h2>Datos que se guardan en el teléfono</h2>
 <ul>
