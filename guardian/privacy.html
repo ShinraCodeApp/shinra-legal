@@ -16,7 +16,7 @@
 <body>
 <main>
 <h1>Política de privacidad de Guardian by Shinra</h1>
-<p class="muted">Última actualización: 13 de octubre de 2026 (saludo de la mañana, clima, ánimo y aviso de inactividad) · ShinraCode</p>
+<p class="muted">Última actualización: 14 de octubre de 2026 (notas del cuidador, registro de salud, historias de vida, ficha médica y radio) · ShinraCode</p>
 
 <p>Guardian by Shinra es una app de acompañamiento para personas con deterioro cognitivo o demencia y sus familias. Esta política explica qué datos usa la app y qué pasa con ellos.</p>
 
@@ -38,6 +38,9 @@
   <li>Mensajes de voz que un familiar graba para la persona (se borran del servidor apenas llegan a su celular).</li>
   <li>La agenda (turnos médicos y visitas) y un resumen del día: cuántos remedios y rutinas confirmó, cuántas veces usó la app y cuántos ejercicios hizo.</li>
   <li>Cómo dijo que se siente cada día (una carita: muy bien, bien, más o menos, triste o mal), los últimos 7 días.</li>
+  <li>Cuánto queda de cada remedio (si la familia lleva la cuenta).</li>
+  <li>Las últimas mediciones del registro de salud (presión, glucemia y peso), si se cargan.</li>
+  <li>Las notas del cuidador que escriben la persona que lo cuida y los familiares vinculados, con el nombre de quien la escribió.</li>
 </ul>
 <p><strong>Aviso de inactividad:</strong> cuando la persona usa Guardian, su celular manda a los celulares vinculados un aviso silencioso (sin texto) con la hora de ese uso. El celular del familiar lo usa para avisarle si pasan muchas horas sin actividad (el familiar elige cuántas o lo apaga). Ese aviso se calcula en el celular del familiar; no hay un servidor que lo siga.</p>
 <p>Cada celular entra con un usuario anónimo de Firebase Authentication. Las reglas de seguridad impiden que alguien fuera del grupo vinculado lea estos datos. Las conversaciones con el asistente nunca se comparten. Para dejar de compartir: en el celular de la persona, Familia → Familia conectada → "Dejar de compartir con la familia". Para pedir que se borren los datos del servidor, escribinos al contacto de abajo.</p>
@@ -49,18 +52,22 @@
   <li><strong>Familiares:</strong> nombres, parentesco y fotos opcionales elegidas desde la galería.</li>
   <li><strong>Rutinas, recuerdos y conversaciones</strong> con el asistente, para poder acompañar a la persona.</li>
   <li><strong>Remedios (opcional):</strong> nombre, dosis, horarios y una foto opcional de la caja, cargados por la familia para los recordatorios, y la hora en que la persona marca cada toma. Se guardan en el teléfono; si hay Familia conectada, los celulares vinculados ven los remedios (sin fotos) y las tomas del día. Nunca se envían a la IA.</li>
+  <li><strong>Ficha médica (opcional):</strong> diagnóstico, alergias, grupo sanguíneo, obra social y médico de cabecera, para mostrar en una emergencia. Se guarda solo en el teléfono: no se comparte con la familia conectada ni se envía a la IA.</li>
+  <li><strong>Registro de salud (opcional):</strong> presión, glucemia y peso que carga la familia.</li>
+  <li><strong>Historias de su vida (opcional):</strong> recuerdos que escribe la familia para charlar.</li>
   <li><strong>Salud (opcional):</strong> una nota que escribe la familia para quien ayude a la persona si se pierde (por ejemplo, "Tengo Alzheimer"). Se muestra en pantalla solo en la ayuda de "Volver a casa" y nunca se comparte, ni siquiera con la familia conectada.</li>
 </ul>
 <p>Estos datos quedan en el almacenamiento interno de la app. Se borran al desinstalarla o al borrar los datos de la app desde los ajustes de Android.</p>
 
 <h2>Conversación con IA (opcional, apagada por defecto)</h2>
-<p>Si la familia activa "Conversación con IA" en el panel Familia, lo que se escribe en el chat, junto con el nombre, la dirección, los familiares, las rutinas y los gustos cargados, se envía a través de nuestro servidor (Render, Estados Unidos) a Google Gemini para generar la respuesta. Nuestro servidor no guarda las conversaciones. En el plan gratuito de Gemini, Google puede usar esos mensajes para mejorar sus modelos. La nota de salud nunca se envía. Con la opción apagada, la conversación se resuelve en el propio teléfono y no sale de él.</p>
+<p>Si la familia activa "Conversación con IA" en el panel Familia, lo que se escribe en el chat, junto con el nombre, la dirección, los familiares, las rutinas, los gustos y las historias de su vida cargados, se envía a través de nuestro servidor (Render, Estados Unidos) a Google Gemini para generar la respuesta. Nuestro servidor no guarda las conversaciones. En el plan gratuito de Gemini, Google puede usar esos mensajes para mejorar sus modelos. La nota de salud nunca se envía. Con la opción apagada, la conversación se resuelve en el propio teléfono y no sale de él.</p>
 
 <h2>Permisos</h2>
 <ul>
   <li><strong>Micrófono y reconocimiento de voz:</strong> para que la persona pueda hablarle a la app. La voz se convierte en texto con el servicio de reconocimiento de voz de Google instalado en el teléfono, que se rige por la <a href="https://policies.google.com/privacy">política de privacidad de Google</a>. La app no graba ni guarda el audio.</li>
   <li><strong>Ubicación:</strong> solo cuando la persona dice que está perdida fuera de casa, la app consulta la ubicación del teléfono en ese momento para mostrarle dónde está y abrir el camino de vuelta en Google Maps. No hay seguimiento en segundo plano y la ubicación no se guarda. Solo se envía a un familiar si la persona toca "Mandar mi ubicación", por mensaje de texto desde su propio teléfono.</li>
   <li><strong>Clima del saludo de la mañana:</strong> para decir el clima del día, la app consulta el servicio gratuito <a href="https://open-meteo.com/">Open-Meteo</a> con una zona aproximada (coordenadas redondeadas a unos 1 km), sacada de la última ubicación conocida del teléfono si ya dio el permiso, o de la dirección cargada. No se envía ningún otro dato ni se pide un permiso nuevo.</li>
+  <li><strong>Radio:</strong> si la familia carga radios, la app se conecta al link de transmisión de cada radio para escucharla. Esa radio recibe la conexión como cualquier oyente.</li>
   <li><strong>Fotos:</strong> solo las que el familiar elige para la sección Recuerdos. Se copian dentro de la app y no se suben a ningún lado.</li>
 </ul>
 
