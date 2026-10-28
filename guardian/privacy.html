@@ -16,7 +16,7 @@
 <body>
 <main>
 <h1>Política de privacidad de Guardian by Shinra</h1>
-<p class="muted">Última actualización: 18 de octubre de 2026 (modo "celular de un hijo o hija") · ShinraCode</p>
+<p class="muted">Última actualización: 28 de octubre de 2026 (zona segura, portarretratos y Guardian Familia) · ShinraCode</p>
 
 <p>Guardian by Shinra es una app de acompañamiento para personas con deterioro cognitivo o demencia y sus familias. Esta política explica qué datos usa la app y qué pasa con ellos.</p>
 
@@ -33,7 +33,9 @@
   <li>Nombre de la persona, nombres y parentesco de sus familiares, y sus rutinas.</li>
   <li>Cuándo usó la app por última vez.</li>
   <li>Avisos: si dijo que está perdido o si no confirmó una rutina.</li>
-  <li>Su ubicación, solo cuando dice que está perdido o cuando un familiar vinculado la pide, y solo si "Compartir ubicación con la familia" está activado.</li>
+  <li>Su ubicación, solo si "Compartir ubicación con la familia" está activado: mientras la persona usa Guardian (como mucho cada 10 minutos, o cada 5 si la familia activó la zona segura), cuando dice que está perdida y cuando un familiar vinculado la pide. Con la app cerrada no se sigue su ubicación.</li>
+  <li><strong>Zona segura (opcional):</strong> el lugar y el radio que marca un familiar (por ejemplo, su casa y 500 m). El celular de la persona compara ahí mismo cada ubicación nueva con la zona y solo avisa a la familia cuando sale y cuando vuelve.</li>
+  <li>Fotos que un familiar manda para el portarretratos, con el texto de quién aparece (se borran del servidor apenas llegan al celular de la persona).</li>
   <li>Fotos que un familiar manda para Recuerdos (se borran del servidor apenas llegan al celular de la persona).</li>
   <li>Mensajes de voz que un familiar graba para la persona (se borran del servidor apenas llegan a su celular).</li>
   <li>La agenda (turnos médicos y visitas) y un resumen del día: cuántos remedios y rutinas confirmó, cuántas veces usó la app y cuántos ejercicios hizo.</li>
@@ -59,6 +61,9 @@
 </ul>
 <p>Estos datos quedan en el almacenamiento interno de la app. Se borran al desinstalarla o al borrar los datos de la app desde los ajustes de Android.</p>
 
+<h2>Guardian Familia (suscripción opcional)</h2>
+<p>Algunas funciones (zona segura, portarretratos enviado desde otro celular, turnos y compras, seguir a varias personas e informe para el médico) vienen con la suscripción Guardian Familia. El pago lo procesa Google Play con la cuenta de Google de quien paga: nosotros no recibimos datos de tarjetas ni de pago. Para que la suscripción valga para toda la familia, el celular que paga guarda en el grupo vinculado (Google Firebase) su usuario anónimo y la fecha hasta la que está activa. La suscripción se cancela desde Google Play.</p>
+
 <h2>Celular de un hijo o hija</h2>
 <p>Guardian también puede usarse en el celular de un hijo o hija, configurado por sus padres. En ese modo no se pide la edad, no se usa la ubicación, no hay conversación con IA ni publicidad. Se guarda en el teléfono el nombre, las tareas, el horario de la escuela, los deberes y un premio por estrellas. Si los padres vinculan su celular (Familia conectada), ven las tareas hechas, las estrellas, el horario, los deberes y los avisos que el chico manda con un toque ("Llegué a la escuela", "Llegué a casa", SOS), con la hora. Estos datos pasan por Google Firebase solo entre los celulares vinculados.</p>
 
@@ -74,10 +79,10 @@
 <h2>Permisos</h2>
 <ul>
   <li><strong>Micrófono y reconocimiento de voz:</strong> para que la persona pueda hablarle a la app. La voz se convierte en texto con el servicio de reconocimiento de voz de Google instalado en el teléfono, que se rige por la <a href="https://policies.google.com/privacy">política de privacidad de Google</a>. La app no graba ni guarda el audio.</li>
-  <li><strong>Ubicación:</strong> solo cuando la persona dice que está perdida fuera de casa, la app consulta la ubicación del teléfono en ese momento para mostrarle dónde está y abrir el camino de vuelta en Google Maps. No hay seguimiento en segundo plano y la ubicación no se guarda. Solo se envía a un familiar si la persona toca "Mandar mi ubicación", por mensaje de texto desde su propio teléfono.</li>
+  <li><strong>Ubicación:</strong> cuando la persona dice que está perdida fuera de casa, la app consulta la ubicación del teléfono para mostrarle dónde está y abrir el camino de vuelta en Google Maps. Si hay Familia conectada y "Compartir ubicación" está activado, también se comparte con los celulares vinculados como se explica arriba. Solo se usa con la app abierta o en uso: no hay seguimiento en segundo plano.</li>
   <li><strong>Clima del saludo de la mañana:</strong> para decir el clima del día, la app consulta el servicio gratuito <a href="https://open-meteo.com/">Open-Meteo</a> con una zona aproximada (coordenadas redondeadas a unos 1 km), sacada de la última ubicación conocida del teléfono si ya dio el permiso, o de la dirección cargada. No se envía ningún otro dato ni se pide un permiso nuevo.</li>
   <li><strong>Radio:</strong> si la familia carga radios, la app se conecta al link de transmisión de cada radio para escucharla. Esa radio recibe la conexión como cualquier oyente.</li>
-  <li><strong>Fotos:</strong> solo las que el familiar elige para la sección Recuerdos. Se copian dentro de la app y no se suben a ningún lado.</li>
+  <li><strong>Fotos:</strong> solo las que la familia elige para Recuerdos y el portarretratos. Se copian dentro de la app; solo pasan por el servidor si un familiar las manda desde su celular, y se borran apenas llegan.</li>
 </ul>
 
 <h2>Aviso de salud</h2>
